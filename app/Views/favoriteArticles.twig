@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/app/Views/reset.css" media="screen">
+    <link rel="stylesheet" href="/app/Views/styles.css" media="screen">
+    <title>Favorite Articles</title>
+</head>
+<div class="header">
+    <nav class="navigation">
+        <a class="logo" href="/?category=general"> LOGO</a>
+        <a class="link" href="/?category=technology">Technology</a>
+        <a class="link" href="/?category=science">Science</a>
+        <a class="link" href="/?category=business">Business</a>
+        <a class="link" href="/?category=entertainment">Entertainment</a>
+        <a class="link" href="/articles/favorite-articles">Favorite Articles</a>
+    </nav>
+</div>
+<h1 class="headTitle">Favorite Articles</h1>
+<body>
+{% for article in articles %}
+    <div class="article">
+        <p class="articleUrlTitle"><a href="{{ article.getUrl }}" target="_blank">{{ article.getTitle }}</a></p>
+        <p class="articleDescription">{{ article.getDescription }}</p>
+        <a href="{{ article.url }}" target="_blank">
+            <p class="image"><img src="{{ article.getImage }}" alt=""/></p>
+        </a>
+        <form method="post" action="/articles/favorite-articles">
+            <label>
+                <input type="hidden" value="{{ article.getTitle }}" name="title"/>
+                <input type="hidden" value="{{ article.getDescription }}" name="description"/>
+                <input type="hidden" value="{{ article.getUrl }}" name="url"/>
+                <input type="hidden" value="{{ article.getImage }}" name="image"/>
+            </label>
+            <div class="addToFavorites">
+                <button type="submit">Remove Article</button>
+            </div>
+        </form>
+    </div>
+{% endfor %}
+<footer class="footer">
+    <p>Copyright © 2022 <strong>Alvis Balodis.</strong> All rights reserved.</p>
+    <a href="mailto:alvis.balodis@gmail.com">alvis.balodis@gmail.com</a>
+</footer>
+</body>
+</html>
