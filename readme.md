@@ -20,7 +20,7 @@ NEWS_API_KEY="Your API key"
 php -S localhost:8000
 ```
 
-Open your favorite web browser, type and enter in address bar:
+- Open your favorite web browser, type and enter in address bar:
 
 ```php
 localhost:8000
