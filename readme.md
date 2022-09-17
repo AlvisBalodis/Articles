@@ -28,13 +28,15 @@ localhost:8000
 
 ### This is how it should look and work:
 
-https://user-images.githubusercontent.com/53913245/190855274-80248bd4-6fe0-4eff-95c1-90933840f141.mp4
+https://user-images.githubusercontent.com/53913245/190856828-146db7fd-de4a-4575-a4c7-16751ff7d8a3.mp4
 
-https://user-images.githubusercontent.com/53913245/190855287-bd461b2d-6994-4746-8e7e-8442de57bc12.mp4
+https://user-images.githubusercontent.com/53913245/190856848-273cbf41-8cb1-43e8-afa0-4f313f9a846e.mp4
 
-https://user-images.githubusercontent.com/53913245/190855300-b72091ba-72fe-4ab0-8b50-73a8379e9897.mp4
+https://user-images.githubusercontent.com/53913245/190856862-45a14740-8eb7-4338-9ad1-41fa2bd5fdf5.mp4
 
-https://user-images.githubusercontent.com/53913245/190855321-20d391fc-165d-4b7c-b902-55cb29462a32.mp4
+https://user-images.githubusercontent.com/53913245/190856768-797fe1af-c907-45fb-8f46-a6f77f5d7482.mp4
+
+
 
 
 
